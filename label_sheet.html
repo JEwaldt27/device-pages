@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"/>
+<title>QR Label Sheet — IET Corporation</title>
+<style>
+@media print{body{margin:0}button{display:none!important}}
+body{font-family:'Segoe UI',sans-serif;background:#fff;padding:16px}
+.no-print{text-align:center;margin-bottom:16px}
+  button{padding:10px 28px;background:#1a2332;color:#fff;border:none;border-radius:6px;font-size:14px;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-left:1px solid #ddd;border-top:1px solid #ddd}
+  .label{border-right:1px solid #ddd;border-bottom:1px solid #ddd;padding:10px;display:flex;flex-direction:column;align-items:center;page-break-inside:avoid}
+  .label img{width:90px;height:90px;image-rendering:pixelated}
+  .label .model{font-size:11px;font-weight:700;color:#1a2332;margin-top:6px;text-align:center;word-break:break-all}
+  .label .serial{font-size:9px;color:#888;margin-top:1px;text-align:center}
+  .label .co{font-size:9px;color:#bbb;margin-top:2px}
+</style></head><body>
+<div class="no-print">
+  <button onclick="window.print()">&#128438; Print Label Sheet</button>
+</div>
+<div class="grid">
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC5klEQVR4nO2cUW7jMAxEA+wBcqRcvUfqAQp0I5JDUlKcXfSzev4wEtuTj8GEHJKSb98/PD5uIGEIJfBfISYQNckO5M9f5BNucfwZX77mXxtfP8eNTz31AAlDuxLsi0nl43nLTnbt9rBr9xRSPgwShhYljCAz9PK8/PX8aKKxB+4RjPzuCFUgYei9EiKhWX7LDHb/Hw2BhKFQwghBI3kp44V8LJe91xDIsxmSHxJ8xCE7jUfH8U8/BPJwhrIuC1P08vS+LgN5NkN1mObMSbvmLJZ5fJsfBAlDkxIkrazjK1B5LJOQ0jeDhKFNCTJR2U983otSvzeOqugHCUNTRhp6idMIPO7Bh3wyq3nLcc+CIGEoApJb7SGast/WS1OTKBTjCut+CCQMdZtshZtOOeFotV2568lTg4ShaCXJP0c1lgktLLZ9WvwQSBhqSojOUpZp2RCIJJcym/0QSBjKrpBcs7rZrSFUQzOPTa0uAwlDUzQxqVTDu/eMVnEtcQjk8Qy1NJZ5K+JQ1GrdZ691GUgY0oTDynrz1BVzfEYb69KauHouAwlDOddQDZYzN7Vio35XwGkaAglDoQR1hdReNElVLtPow6JOz2UgYWitrirc+KdcFauB/jovAwlDVcBH3vLWUNRZMdzwEexUey19apCnM1R9n1rxEY+2CcfL/hBIGJL3mbaRtbHYshxfyyD3PjXIsxmqbWQ1L1NtL4vti4heeGqQMCQlhL60e0oVV/SH2nqQZR8ASBiaXNCqF/+kEHTdHwIJQ7VoP3NfX0Wt44WnBglD8yGB9GqsJhx9E/W2IwTk0Qzpn1TDDXnw2Yj3UAUShi52N/qRcstFRFfqAwlD+y5ru5JLqTXLDz+0xSGQMLQqwWv7Gprl8rPY8HGtIZAwVBsVpw3T07vR9vVD83siQB7MkPyQ9gb1Kr/2l131h0DCUNVl6+A1tknne632dYwgYeikd5eChCGUwH+FmEDUJDuQP3ef8Bd1Pxq0xh+XuAAAAABJRU5ErkJggg==" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715N7</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC50lEQVR4nO2cS27jQAxEDcwBfKRc3UfKAQx41GTx092yE8xy9LQwZEeVRaFEFj/S7fWPx+MGEoZQAvcKMYGoSXYgf/5HPuGm489x/j0+Xs/8l+PMfvuOq75AwtCuBPtiUnkMIT3igtuX/XZPIeXFIGFoUcIIMkMvx8/P4/SegcrPnvrrCFUgYeizEjyheX7LDHb/jYZAwpCUYHnLbjVPaJKP5bLPGgJ5bYbCD8kFWRw60phfOo4f/RDIizOUdZlM0enH57oM5LUZqsPgEa0OzY2STPFtvhAkDE1KCGlFa2hUYxKZhbEUUvpmkDC0KuGVUvGm4ghB7pqiNTR6RuoUgYShTQneBrLOYgrJ5eNxKHLfSRYECUMKSCPwSFUWgm5Z1qlJVIpZnBRIGOo22Qq3+MgJR6vtyl1PnhokDHk/SUHGzqaEJsukltPsh0DCUOSooRzrIrVCTA2BqNU0Jlr9EEgYiiNcs4b3vSFUQzOPTUsuAwlDoYQwO+WkJSkLQdl8PNEQSBiStZEcwg/ZoVTVffamIZAwJGec/aEWc2rqUaOP3VODhCFFn25ttMLYRvyR6bZdAZAwJCXkXkhUXJXLYvTRFhy7hkDCUOglarC6rbSIJM/zbkoCEoamDJamyEWT+coldbazBBKGVL3nzloN6qcJx2l/CCQMRSJSNVY1WOwPzev4sQbZanuQMOQZSfOy7oJi7zHsjnUbN08NEoZWVxNNn6ni0uFR550fAnl5hiIO5fp+PBZSIeisP5TFGciLM5T7+rX70beo49g8NUgY2p/riLpslVSmqtVTg4QhNzQxo6+v9UDR+rhRj0MgYahlwYo+ylv5hzLPp891gISh+Slr81S5Su1TsnzoeotDIGFoVULNOqrHWLuNH98dAxKG8m0PbVQm0WQG2/aH5vdEgLwwQ+FqNLevlOVZTa3Yd/0EkDBU1VXvALXpaxZs+x4jSBi60rtLQcIQSuBeISYQNckO5M/dJ/wF9Veo+Zp0ii0AAAAASUVORK5CYII=" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715N6</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC2UlEQVR4nO2cXW7CQAyEI/UAHImr50gcoBJNvB7bm02g4pH99oECyfRhNPjfWZ4fnnUBCUMogd8KNgGriXfAf35RnLD4+WnfLveHv9vO73aLfXzorjtIGBqVYB9MKut2yV7su8bVegshxc0gYeighN3I7HrZvt70st5CKjc3Ru3qbqpAwtBrJexH/i082O0/GgIJQ8UOmeFxj+fyMV/23g6BnJchxUMtClp2X9ZelrAwb+IhkJMzFHmZS/D05XVeBnJuhvKY5vK/WUrm9q2/ESQMdUqQtJTH93mZYmrdAhKGzpTwrFKxbGy7FoFVFo6sUgQShgYltDKQiaYJyWLwqIOE7zvxgiBhyA2SWR8TTYbfLa3zIlEq5hBJgYShGibLjTVfpg5Hye0yuu5iapAw1NIvrwWospQOzUMmv3D0giBhKAVS6o9qbngH3yIjieVQkwIJQxkZqyaplCxONs2abRpiapDTM6QKd2b0oRzVjBRdX3RJQM7OkPItNzKyOXY8V6txNkgYGiuFra9hf+TLXGkx1RE1xrG/AhKGhnmz6LkVg1ZmGwfbBxKGlF15O7ZEy+7L5B6jI3vMy0BOz1Bqw+SQPysvF0XCNnpBkDAUx2Of7NFH1m592IiWxjo1SBjqqs2lp5/TSGabLupDIGEoY5/YA4r4WTNoUcCOxbOuxggShnJmsY4Jae5RgZIp7BhTg4ShzNC7lCyn0bw+VOZBhtweJAwpas5BtDI/pEH+GB0ad0lAwpC0kWl9C5RzilpniKlBwtCw11H2i5SNZYcjy0Unex0gp2ZIZiaXGHdQ6Zf1+0UgYWhUQt1uDDeWF/TuRH0gYWh48kIUpstYYy42juoDCUMHJRxXgFSGVsL2ascfJAypX1YHXHNRMSR1aYdATs2Q4qEyeVZ7HXom0cX8EEgYyrysqiQ7YfGgxhySPXlOBMiZGfrggIQhlMBvBZuA1cQ74D+/JE74A+vHL+p+LKwpAAAAAElFTkSuQmCC" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715NB</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC4ElEQVR4nO2cS27jQAxEBeQAPpKv7iPlAAM4brL46W7FCbIcPS0MWVFlUSiRxY98PP94PA6QMIQSeFaICURNsgP58z/yCYeOj9f558fzuD//5b8cZ69rr4+46w4ShnYl2BeTymMI6RE3HHe7dksh5c0gYWhRwggyQy+unMNEYzfcFIz8ryNUgYSh90oYh4tGqW2c3H6jIZAwFHHoFYJG8oqMJ/m4UXofh0BemqHwQ3JBHq7NbGeE+cEPgbw4Q1mXSYKnH+/rMpDXZqgO05wVZ645i2Ue3+YbQcLQpISQlky0VWMSmYWxFJLfAhKGdiVYxpNrMk81hOSuKVpDo2ekThFIGNqU4G0g6ywe1RByXx450t3VlgVBwpAC0md1hSwEbU2iUszipEDCkJQQ2co14aZIaazVduWuS0MgYcjjy4g54Z8rl9VsMc72LAgShlIJSwcgv7pySiyLHwIJQ+WMTSAxvO8NoRqaeWzaPDVIGDLvkxsfXTm2CuJDk9ouWuIQSBiSNlor0WOOqnzfKWo+e/XUIGEoJxxqUQclYY+q3nf30zQEEobarKOCTM3cmjNqu41dQyBhqClBeyG9nxi5LEYf6mKvGgIJQ6GXCDeZ2morVtfOpyQgYShCioasYayrapcfOukPgYQhiSDnq7nxIdG0CcdZfwgkDM3VVcShqu2rDV0+e/JDIGEolKBpRndBMfWoRtDkfkDC0FpdKdK06NMrrijYtlwGEobSFJcLmvaHYpE/3dKqIZAwFLLoy0E+o68t6lrk3z01SBiaDnURawEk1z7Wl6jP3wgBeVWG4kHK4ca0P1QlWb2SDxKGvn27cU5ZtQrynfpAwpCUMD9WvSSbX2zc4hBIGNqU4AJZ3LVd+8Vvx4CEIa2T1ahMrzPWzxGd9ofcNYG8NkPhh3wDtsUVN+dqVp/1h0DC0FyXdZUkOb7WaPfte4wgYehKv10KEoZQAs8KMYGoSXYgf+4+4Qt11M//gI278gAAAABJRU5ErkJggg==" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715NM</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC2UlEQVR4nO2cXW7jMAyEDewBcqRePUfKAQp0I5JDUpbqFvu4/vTQKonmZTDmv3x8/eN6HiBhCCXwrGATsJp4B/znfxQnHLH+vPev9/+P19j5+nwfeekHWx8gYWhVgn0wqTzfQqoDztXzkULKwyBh6KQEWR9XzvFIQ+W7z/h1mCqQMHSthLFcNOXajsdvNAQShkIJ5rdcQ2auQz7my641BPLeDCkeOjk0P+oW5od4COTNGcq8LJDbP9d5Gch7M1TLw+kRSbvmRkoW9m0+CBKGJiVIWpnHl6EyNaWQPM4GCUOrElwlHjVZTDVMkEdNKg09ZZZAwtBGCf7NEE04L1PTkE96tYiuFi8IEoYU35SqzAQtRSIp5hSNg4ShHlO7ctQbqw5Hy+0qugYJQ6eMbngwl4p5tdmhRYgdJadNPAQShkIbWVRq7TOvJ0lXxze+DOTtGZqqQhZYZ8XSVjXN3DZNdggkDGlFIdt3NTCkXC2+O3VJQMJQRjfSRtaCZIeU9Lc4e8rtQcJQ80hZRQzRqEHiXY9qfay+DCQMeWFazf4wLjnWGKJRoXGZFQAJQ6GEnAs5jTCq7hiVojm3BwlDk166ufFdDCJVArZ2SUDCkNyTV6K9ZujyUdYeLdj4bp1ZAglDWYTOixyW0bdpJLNN2/oQSBhqSqgU3i+Zuauax/Hz4tmkIZAwNEXS1tLIBoaC7SgcLTE1SBgqa1JyqMFF5WqxLE1bfRlIGJJHUrmw6cV3MkG7+hBIGKrsqg0HyaG1Gf4YYVztEEgYmpYE0rOx8mBVLtrc6wB5a4b0INXdM2VjdVFt/ggShi5uN3aXVUNE36kPJAzt3vthJqtfq66LjYsdAglDqxJqnvqrj5/Fi4muNAQShuoOxzTgWv2MzfxQf08EyFszpHhIvY40N16x1pDsrj4EEoamvKyrxPoa2YL1c+scI0gYutO7S0HCEErgWcEmYDXxDvjPNU74C2P0dhxtoY0lAAAAAElFTkSuQmCC" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715PV</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC0UlEQVR4nO2cyW3DUBBDBaQAl5TWXVIKCJDoz8L5m+3Ax+jpIGjjhaBm4Xzp+Hlzux8gYQgl8K4QE4iaZAfy5z+qE47YPs7jr7brtu8jrn3lU58gYWhVgp2YVO6nkEJNdsOu3SQkPQwShiYltCDT9HJePvXiorEHbhGM/G4TF0gYeq6EtrloIrW1g9tfNAQShro4FBqyjBfysVz2Og6BvC5DWQ/5Pd+daSxPj9f1EMiLM6S+LCS43T3vy0Bem6HaTHOpw8Or64hv44MgYWhQQkpLfXwFKgtjEpKafpAwNClBVZOHoKYXd4p07TyNsAQShjZKcBvI7UW/1wKP+yClsP4IJAzN9VALPDbX8HCzmkSlNZAwtFWCn0gvlstywtH1dlVdg4ShOSMpb/lRROo0mkxzkeTmLAgShryjj7wVYwsNN9yYzAmRR6TRTwAJQ11NXQLRkaql0JXHpqWmBglDPp73UkiLiAbPKKvraUoCEoZUU1uiUhGtFj56tSy2V1cAJAyVx2gdfdTUFXNq6lGjj6EeAglD3nR1QaavrtOsNtGk0bisFQAJQ6EETfz7SqfzHcMpGnIZSBha/GerpOu1itFHDvT3UxKQMJTj+XKivVWVRHwEG9fWvgwkDKVTOLpCLppuwrHzh0DCUGfTlyfdS2Vajq+vz0DC0KwE1c9V9midTPmOUWeDhKGtEtzqkWc4dFyxZZQCCUOrEuTyLOuHMg6pAQMJQ1sluJDkJ3qJXauoayH/Ng6BhKHtdx3qxiqDlV309LsOkBdkKN+impKZSaQPiirWzHN7kDC0fN0YXf4wG9MjG/WBhKHlzwteOtcqkFzW6PXQEodAwtCsBP1wqK+ubSHa8eobf5AwVEupa1QWY/z6HdHOFQAJQ11VU7taWV3flz1wBUDC0PC3h1JJ9naxrDFr6of/iQB5ZYbe2EDCEErgXSEmEDXJDuTPf1In/AIh+IuOq8/CbAAAAABJRU5ErkJggg==" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715P5</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC2ElEQVR4nO2cS27DMAxEBfQAOVKvniPlAAZai3/GigNkGT8tgsb2dDGYkCOS8vj7cN0HSBhCCfxWiAlETbID+fOLfMKw9bP//Rjz2jbGrz6y7V8fdkOX3AAJQ10JqpcplfsuJFOT3JBrtxBSPAwShp6UMIPM1Mt+ef+BDRGNPHCzYKR3p7hAwtC5EiwEbSW1iaTeawgkDJkSNARt4X1MPpLLzjUE8toMuR/yhDZ99p7G9NG53vohkBdnKPZlhlx+nO/LQF6boVyiufxvsiWz+NYfBAlDTQkurdjHZ6CSMBZCik0/SBh6UoKqRF2T1Ri1UjSveeHIwhJIGFooQfRiH+HGRT4ahzz3LbIgSBhqJkeijy0VUu1/eGpbOSmQMBQhRfUyP6LDUfZ26a6bhkDCkPohJaLlMvNDaiDtxsIPgYQhVY62W8tGzAoClqpCLL2eABKGwudUsxN/6cqmWQyFhKcGCUNZCzKpVH+TNSN31y+6JCCvzlCWEv1rm7BKy7yoCoCEIXM1IgtTX1Wa9minfLL10f0QSBiKCFaLP26nrVjtOpFC4zH2gYQh63B4P7a45age5q6t5TKQMNT1UsONp7atJa2lHwIJQ75intqGqiNLiZ0Ot7TodYCEoTgMlP7GO2fZ4VjWh0DCkDvjGJb1loarqY/j+xhk8dQgYSidccxfqwvyucfMV839VE8NEoZiSNGHsGMazetDZR7keA4AJAyZa45CtmzmI7hkCFrVh0DCkCmhHgbxHn1OUfs6eGqQMLQ+12F1ahNNdjhqSw0kDDVnbCv7sXV+KLdkNVSBhKEXpxtjX1a8TzxyjEMgYWjx3g/zQ/VYdR5sPM6bgIShhRIyDrW92tt3x4CEIX/bQ2mVxQthLIMd5of6eyJAXpgh90N+NiizWtai1/UhkDDU92W1AiR9DW1I+8tCSpI7vicC5JUZ+mCBhCGUwG+FmEDUJDuQP7/EJ/wDrYBdJnHrVYQAAAAASUVORK5CYII=" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715NY</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC10lEQVR4nO2cy23DQAxEBbiAlOTWXVIKCKBIJIfk7spOkGP89rBIYM1lMB5+5W3/43lsIGEIJfBdwRNwTaID8fMf5QlbnNv513l9fG3bfT+u86/9cV77p566g4ShVQn2z/5503XIx6/HIanhAz0MEoYmJZwmc3epbG485kjHAyY38yG5FEgYeqWEw6TTliriffxCQyBhKJRwVwQLHzJH+pWGQL45Q8qH3E385PMtW3qeD4F8c4aqLnMJXl4/1GUg35qhOl60mnn1uuzIIqcDEoYGJZigQl/ZC7L+UHxgAdA+vfI+kDDUBDKV9V6S+eVJlLVFFu8DCUMe3TzOVUp+aqhdkWddaAgkDKnBY55jAsljUw+Jy9U0RkGQMBSKCLsJqXhsMpvpibja1i2nBglD5SZr7hPpUSknMu7Zh0DCkFep5TkamlnZpQl+mdFU24OEoWr5mGha7hOtodJVjGWX/hBIGFKyk91sDerr6g3MuS4DCUPRFaoEKLqHOWTL3Y+lPwQShgYlWBaUdhM96cqpc/SxaggkDKXxePB6tAJ/sCWP+3M+BBKG1H+uPUaNOYZifhi8Zj4EEob8uL9YmV79xBpNZ8d6yYdAwpBsWD3p8BUr5nO4kWP8pT8EEoZ6ZuyLa6rQel2WKfPaHwIJQ1JErZr1Or6ENMS3riGQMOQRScMNT4raW0K5RBQBbc6pQcKQMuPqSQ+bZ5kxlkHNOTVIGJISFLdqMTs2FKd17FVDIGGobSP29xFzGy2qtirwe38IJAyNp61Gt80gTVqv+kMgYajcZF6lznlZJM8vdvJBwlC9v+jFmZdkWoMNC8rV2KEuAwlDWaHLacamT6bTT/aHQMLQpIT6waG+BlsFfpMZSBh6poRMhfTWj0ZlqTCQMHShhGoXVn5TL5TVy4tzfwgkDK2/x6geo96azha1rqe/xwjynRn6wwEJQyiB7wqegGsSHYif/yRP+AYSmYbfBH5/mwAAAABJRU5ErkJggg==" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715P9</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC6UlEQVR4nO2cTW7CUAyEI3EAjtSrc6QeoBLl2R7bL3nQiiX5soiAZDajiT3+Cdv9zeO2gYQhlMCzQkwgapIdyJ8f5BO2OC6Pz9+X+/bVbvnZ7LfHSXfZVZAwNCvBRTOkcnsIKdRkF+y3awopbwYJQzsljCAz9BI/XzNQ+aefuDrEBRKGXiuhQlCktpG9rv/REEgYCiWMvDWSl7xPyMeN0ksNgTw3Q/JDfs1PjzSmr9vffgjkyRnKuixM0fL0ui4DeW6G6jC4irMtYpnHt/lGkDA0KUHSMvmMaFWBysJYCil9M0gYWirB2kCeD0cIctek1pCJyztFIGHooARvA3kGG4HHPfiQj8ch5b5FFgQJQy3wpKdSQrOyLppEpZidkwIJQ6GEcNKhCctlmnC02q7cdWkIJAxZ9LFWktKYh6BKaGGx48Lsh0DCUCmhxZw2PvN+UnYs97kMJAy1/lC4ZnPXKZX0PFHge2zquQwkDMURY5EKRloYit0PuevdlAQkDLXqSsqJXpDi0EhjabaPXQGQMKSKvrqItfahAUnV+z76mPwQSBhyQ+NBRu3FnLmpWW2iUaPxsCsAEoZCCTHx7/1E5TKNPjzdHTQEEoam/rOcUXxSfygKttWUBCQMZVcohqzVOAyJ+Ah2W/eHQMJQll/tYZJRniYcT/pDIGGovE+ueFjBHvtD8zq+1iDnuT1IGOpeuWyP9h71jqJ1G/eeGiQMVXWlkkyzsbniqquL9wBAwpD2zaIn3fSS848qwPbvAYCEIY8mubTfZvS1RV2L/Mc4BBKGpqOGZlWNVQZrK9eL9zpAnpkhPUhKWR5zWoTZBRyQMHRQQnu7sdJYXdCnhfpAwlAoYV5cjCZRdYXSDx3VBxKG9kpQNdZ6jNm7Dkk90RBIGMp/e2ijshBNZrDD/tD8PxEgT8yQ/FCdKg61d8hW/SGQMDTVZb0DpKXq2IWVp376PxEgz8zQGwdIGEIJPCvEBKIm2YH8+SE+4ReeBgEo7AhIQwAAAABJRU5ErkJggg==" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715PN</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC40lEQVR4nO2cXU7EMAyEK3GAHomr75E4ANKyicc/SUNBPJIvD2hpOy+jqT12nB7PP67HARKGUALvCjGBqEl2IH/+I59waL3Fjc/jePdfz+dHu/HhT/UbIGFoVILppUnl0YT0eClFN/q1M4QUD4OEoUkJLcg0vejyGVI5Iyy1uy1UgYSheyW05fktMtj5Gw2BhCEpoeetFnjkfSSfnsvuNQRyb4bcD5Vwc7SEZr96bPrBD4HcnKGoy2SKln/u6zKQezOUq2vOo9VLc60kU3wbHwQJQ4MSXFoq67teSoUmT+2PgIShlRKsqZgx52WnWqfIfqlxpLAEEoYWSvDOYu8n9guSlOJQxKZrFgQJQ5MfUrjp9tvKOjWJdDebjyBhaFRCZCvTS/sTOxyltkt3DRKGpoqu6SX8s6qxSGhhmfqbN/ohkDDkOcxjjtme2NywxqQ5o5baFrkMJAwt+kMqyWLlplkMhXzTHwK5K0OKL+aCstEYPaMz3fW8SwIShuZ6K+x0mUHr9Xvx2VW3IGFI0cQregtUJebkrkdufQxxCCQM1XHFGnh0rWzxjy3+cYwPJAx5V8jiSmQpl1SPQ+oUDbnMTBRIGBr6z9lFVGqrNv3GD4GEoToc4r0gSaTbaZPU3B/SAyB3Zyir/XRBerTscCy7AiBhyP2NqjE5oiy/pnF8H4Mc+tQgYUhnOKK9KGPtAc3PKGYBNtT2IGHIM5iPpvUEqGm0nIr1gu2Sy0DCULganzfLo2I6FpIhaNUfAglDUkK48XBBdYra18pTg4ShYblAajWWGSzbRYt9XpBbM+Qvkm9ujPNDNdZc9+1BwlBqToMd9UBZjo58pz6QMHT98kIctR7+lR+6xCGQMDQrQUfLYtMsRkEsyd1+OwYkDPkZDmslZqkfY+eL+aH6nQiQWzPkfsjGOKYq37qNYYpAwtBCCVFdTUfty/f17LnlHCNIGNrm26UgYQgl8K4QE4iaZAfy59UnfAFMC9m5ym1vXAAAAABJRU5ErkJggg==" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715P2</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC10lEQVR4nO2cUY7CMAxEK3EAjsTVORIHWIltYo/tNFkW8UlfPhDbdvZjNLXHjsP2/HDdN5AwhBJ4V4gJRE2yA/nzi3zC5uuyf39cntvtsf9xs0d+tn5t/9BT/QZIGBqVYHppUrlLKX6jX7uGkOJhkDB0UEIPPD0EtcDTROMPXD0Y2d0WqkDC0GslWEJrovHU1r5c39EQSBhyJVwVh9z7uHzMKL3UEMhzMyQ/5AnN/kc32/357X8/BPLkDEVdVpDTx+u6DOS5GcrVNadotcldl1JfCyQMDUqQtFTbN71kXSZPrUdAwtBCCZbsShuo2SlzTbrWxOWdIpAwNCnBrjTR6F7vD3VfrhzZY9OcBUHCkAekPVGVd8vs99AkkmIObhwkDIUSlK1ibyx3OEptl+4aJAytMpL8s/Y6lNDMdtu3dRYECUMZc8z2xOaGNSZjh6hHpFl9IGEoW0PeH4raPjyP68pi06E/BBKGtFufraEyMOS1mrzjvEsCEoYimpTOYpTwUatVnz3FIZAw5Psaq5iTux659VHjEEgYqhkprFDsualZXWPTKpeBhKHW98m5EFVcmcs8SqXjHnbaQMLQqI3sIno1lrXXar8MJAwVJWh6zUp4F41ijUtqmjwCCUPpaqLEsjTmJzxyh2PVHwIJQxFNcup+LL8O4/gagyxxCCQMmTPOLQ0PQXla0VVjJ81mTw0ShpSRPNKU4JIVl68uszmXgYSh0QUd5oc0DxKjQ4tzACBhqMzrpwuqU9Q5yD/FIZAwNC4JpFZjabGzXbQ41wHy1AzpTdLZs3F+KEsyHckHCUOLCY6hx5hD+DFE9Jf6QMLQ9LsfcdS6HKvOg42z+kDC0FEJts0x9Bj98OIbvx0DEoZiJr/Lx6dA9hUZbJofmn4nAuRZGZIfsgnYkrKy2ximCCQMLZQQddnhqL0Ono0FG0gYmpTwwQIJQyiBd4WYQNQkO5A/v8Qn/AIhXPe5Ze6KrQAAAABJRU5ErkJggg==" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715NS</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC5klEQVR4nO2cS47jMAxEDfQB+ki5eo6UAzTgsUkWSUlOejDL8fPCiWLVplDhV/S2/+P13EDCEErgv4JNwGriHfCf/1GcsMX1tW+P13Hz6/tns+X+/D62PF7a9QAJQ6sSbLG/pCFf7j/bseHLH8QtN4OEoUkJp5Fx+TSpSEPPwyK5wtxUgYShD0pw67MfS5OPO7Rz/68aAglDskPu1Wy5LZ7uox0CeW+G9MysibuxdGgVbH+Kh0DenKEpL7u+/U1eBvKuDK1Xas6+WW4/bgAJQ4MSZKjC95loTEgeWHuGlkWiyfaBhCFTgkdNJhU5QMvGnseHzFKProYYDCQMZQXozOi9Om3GyNxY3Uw5UzQOEoYyHpJUToF4KBTLLC+af5t9GUgYSs9UbY5waK4mC3c8mRuLBCBhaK4sheEZImm5qjMoCgOlaAkkDE1KiB69pOKBcvktxUMX1UmQMBRBjYfTphctKznbV4tU8RBIGEpfVnl8qOlc5q2VKBcvCBKGTmuiFkikZLJIfvZDte3a1+wQSBhq6ZcMT6hJ5cVMzi7iIZAw1MIej3jU5minAExNcRpt7daChKExu7Ls3aTieXxmaNnQfZfRgbw1Q82DVQ81AiDdsucKEoYulNCPUqtYXUVFlfOzmwYShi6UEHZp6HV4Hl8DQnViBiQMLd33cnZtLChFk+1WfzDl9iBhyF2WDFGWqDXcER5sUNgQg4GEIYU9KraGB+tDiRoVWs9+gIShsW+fRsbLQGrjx+kiU846SwIShkoJ1S/z1modP8uzsBmAjxoCeXuG6qpjH+qS9VmiGi1a5zpA3puhKj3GF4VHx7M+mVZlEZAw9P69H9lfzYmgdo4xxx5BwtDFhE8rVvfhjnGGLAUHEobeKaG96CMfzL+BhKEPSohGbWvKRs1IHVyQMPRGCYqHWns+T1ZXDagcGkgY+u2tipWD5ei0ZyLLXAdIGLrTu0tBwhBK4L+CTcBq4h3wn2uc8AcadXRb+8r4WAAAAABJRU5ErkJggg==" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715P0</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC30lEQVR4nO2cy20DMQxEF0gBLimtu6QUYCBZkRxSPzuBj9mng7Efz2UwJocU5eP7zXU/QMIQSuC3QkwgapIdyJ//yCccsT7O66/jfPbVrnw9dHu+8PUJEoZWJdiNSeUuNdmz49Oe3VJI+WWQMDQpoQWZppfz8eO8vGWg8qtHvE1xgYShp0poS/ktM9jtLxoCCUOhhJa3WvJSxgv5WC57rSGQ12ZIfqhckCU0/6pHmF/8EMiLM5R1WZii7cfrugzktRmqZfDzsTRnsczj2/hFkDA0KEHSijreg5eLzMJYCsl9NkgY2ijBP5pUvKnYQpC7JrWGWuMoOkUgYWhRgreBPIP5O6nJ45By3yYLgoShCEi2w2HtRfdDw228VWobnRRIGOptcu2XZd4aa7ty14OnBglD7prDSfe5TLf9i9EPgYQh5ajczaj0roaAK2cu2EDC0OKMQz7mrlMq6XmiwPfYBBKGZiVEDZYtSt+3n3pG7pbWXRKQMCRTXK3ESG0eg0wiMtubrgBIGEpnrC5ijX1og8R3PWrrY/bUIGFoGFf0VqLsdDSrTTRqNE6zAiBhqAr3aUdMI4wRZsooLX4IJAwNNbvVYHWVsckLtrU/BBKGSiBlj3Oo2mtY34INcc1+CCQMZfkVuUlprDvh4Tsc2/4QSBgqJag1VHsdkbz6cfw8eNZrCCQMqZjXsEfs22vuUWcUrQCbPTVIGKoKXcNBZoXUbYwZ/lh9gAIJQ8uJEC+6wgXV/JDiUO4QgYShrRIkJE0v9sGoW7udNpAwNCxtt/bVWGWwahftznWAvDJD+iHp7Nk4P9SdVstbkDD0/HRjNyvUDxE9Ux9IGFpPWadUuq5Q+qF1fggkDE1K6Kv87378LM6+vvjvGJAw1Mchk09OgdQk/jI/tMQhkFdlSH6oPoa9Dv0n0b4rABKGhn97KJWototZWHnqp/8TAfLKDL2xQMIQSuC3QkwgapIdyJ//xCf8ADuvWHd4LWOUAAAAAElFTkSuQmCC" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715PR</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC3klEQVR4nO2cS27DQAxDDfQAOVKuniP1AAVSeySKGjtOiy7rN4ugic0NwUrUx16efzyPBSQMoQT+V4gJRE2yA/nzH/mEJc/H+vfn+Fi/3OOWr6X9Ns64ABKGZiWEXjapPFYhWSrLffx2KyHVzSBhaKeEEXhWlaw/r3oJ0YwbbhmM4uoWqkDC0HslbEf5rTLY7TcaAglDqYRbxiEltJTPyGXvNQTy2gzJD8W1+FjTmL4uP/shkBdnqOqyNEUvP97XZSCvzZDPgEuHS8ayiG/zjSBhaFKCpDVqe3nqENkIYyWkUBhIGDpTgir6LPDDNak1NMTVin6QMDRlpBCI/NN6tsATfZBnbzkesyBIGMqAFFZbdVzY7/iaTaJUzEbY7KRAwpCVEFZIszFPOFptZ3c9aQgkDIVrHkTUrCObSs/JI8UIdqoFQcJQHptoF2LZEMirTSxTbQ8ShlTHT4P66lhGvsqqTbGp12UgYaglKjeJRnHWvtpdH6ckIGFIGcneR36op6rus/e5DCQM5YRjq65yWuuY46mHRx+TpwYJQ+VqHGQ8c7PPDoXdX895QcLQ6Ps0A5QJzbls18XuGgIJQ6WXFm6GVJzashHUA45nHSBhyDEnI03N6EM0ijUlrt28DCQMVYWuqapq+xBNm3Cc9IdAwlBlpOoFqWCvKt8LtFqDnHMZSBjyMKzLQXuPqRo1sHeeGiQMOSPlclDNXKPi0iOL3gc55jKQMJSuWdtUWohNdTgEveoPgYSh6hTaOmtG7y1qnbOZK8jLM+TTni/aCaOWQmZPDRKGsoGoOr6/s6HNy+bni3ocAglDh+gztYG8RHQSh0DC0PG9H7VP3R6r9oONx/0hkDC0V0IIpFbvtQGrJPfu3TEgYcjPcNSoLMf4x+W0V++JAHlphuSH/NGela5m9dn+EEgYcnXVVRJL1VmrhWJyMb9pCCQMhTgu8u5SkDCEEvhfISYQNckO5M+jT/gGLQzdH2ITBasAAAAASUVORK5CYII=" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715NA</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC2ElEQVR4nO2cSW7CQBREW+IAHImrc6QcAIm4/9wDJGKJnxcIJ65Nqag/ttvzw+veQMIQSuC3gifgmkQH4ucX5QnNrku/ebR2+7k8200feRyPHLfHhz8l/wAJQ6MSVC9dKvdDSKIm+Zuo6Xm/hpDiYZAwNCmhm0y6z/0aRqXf3JtCXCBh6KUS+qWi0dAmEez6Hw2BhCFTQo9bPXh57mPykVj2XkMgz82Q50MlFWqHXeutOswf+RDIkzMUdZklRduP93UZyHMzlJfAvThr5mXqb+ODIGFoUIJLy5NoLevlAbGxEJK1kEDC0KKEllKRpmL/EDPSW20cmS2BhKGNErQN1FWSQlL5qA957NtEQZAw5PlN/ra6yNYmUSpmzqRAwtAw5jC99I+YcJTaLrPr0BBIGDJ/8bgV+VAJaJp2h+FMURAkDLkScl5maY83BCzIScdyiWUgYSjrMreb5Vsdmqk3TRUdSBiK7Q7JgkblSMtRhyY+Kll8CCQMmV5sYcjqsrKDlsn22hUACUPLhEM7ReE5sdURPcZ5vgIShtR9JGR5+aUt6lhrNNGMQ5CYkoCEoSzcfR7rmU7GMvEhd6kay0DC0NJ/jvwmRx+lANtPSUDCUHjxZZjRq2iGPHvpD4GEoTAZy5VLV0hFUyYcL/pDIGHIleNJ9LikNq3j+xrk4EMgYWgeadjc3vcevRFkBdikIZAwlG4S51xzA9a3s7Ngm2MZSBgqFbpZkO8s2v6QL/JHATZrCCQMDVlNamLYos4caetDIGEor3K+KKqxnHBku2hzrgPkqRnKU0XlNg8UzceNQMLQqoRyurEcjl3WiTbqAwlD65sXoqIfbusvb9AQSBialCBZ89RjjH0Qk9ReQyBhyN/2kPPVOM2Rm/jL/lB9TwTIUzPk+ZDN7ae3WXkrdtsfAglDQ11WO0DX8eCZ59Qv3xMB8swMfXCBhCGUwG8FT8A1iQ7Ezy/JE34BPdwaAJE/NLcAAAAASUVORK5CYII=" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715ND</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC1klEQVR4nO2cSU7DUBBELXEAH4mr50g5AFLw7/kPDogl/3lhGcfFolTprh7i4/XH43GAhCGUwHeFmEDUJDuQP/+RTzjs+NC7x6efruPreuTZPnj6U/IBSBjqlaB6aVJ5XEISNZmQ5N4ZQoqHQcLQoIQWZJperttf1+UZUjktGOmnIS6QMHSrhHZ4fosMdv5GQyBhyJTQ8lZLXu59TD6Sy95rCOTeDLkfyjSmV/KoRpgf/BDIzRmKusxM0fL0vi4DuTdDeYjmvDg7LJZpfOsfBAlDnRJcWhKjprrMPXU+AhKGFkqwsl5ToVxJMIp7158WlkDC0EIJopdOJS3wiJDUTlkuW2RBkDA0+SERkthvyWreJDLFZJIDCUOzEh6pl3aKCUep7dJdg4ShoaKTVpL758xl5ofEMunV6IdAwlARiJnofnym/aToWI65DCQMLVyNDOpzs+HVDc00Nt34IZAbM2QZKVqUZdyq/yjd9TglAQlDKq9WiNWFoSjhNY2F2V51BUDCkEYTk4M3hCLmxFZHdI/GOAQShjL66L6ZaMLtdPjsGnCqhkDCkCvBukJ1IuYrjBaCxCgVmYGEoc7VnIPz9sBj7aJIWrMfAglDfTHn+9TWC7LaTuy0Smo16wAJQ9Gddn8Tg/puwnHbFQAJQ56RSlkfUhnW8X0NcshlILdnyDz1MLf3vUc3SkPpVj01SBhSF5TLQb646Dv8dkiZNs/LQMJQ7L3aSKPoRa88BK36QyBhKJRQl4O0Lsstaj9mTw0ShrJCr3Glq8ZywpFV2GLOC3JrhnJk74uLXo31JZnv7oOEoUkJ5deNXcrK1ZE79YGEofm9H17gl59V5w8bZ/WBhKFRCb4m1Llrz4xv3x0DEobsbQ+iHDvlJMwy2LQ/VN8TAXJrhtwP5WnqNoYpAglDCyVEXVY/00mYrQ7Zc/MeI0gY2undpSBhCCXwXSEmEDXJDuTP2Sd8A5Tl6EE0cBEwAAAAAElFTkSuQmCC" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715NJ</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC20lEQVR4nO2cXU7EMAyEK3GAPRJX50gcAGlpYo/tpNmCeCRfH1Zs2+FhNDv+bY/nH4+PAyQMoQR+K3gCrkl0IH7+ozzh8OPt/Pvz7Xm8l1u+jn7u/NBd/SpIGBqVYKJpUvmQUvxCP/cIIcXNIGFoUkIzmaYXP91FY3+5GdnVZlUgYeheCWlBHtraicdvNAQShuRDpwU1H1Lu4/KxROneh0BuzZDyodNzmgXlxxEO80M+BHJzhqIucwkuP+7rMpB7M5RHh+d/My8zfxtvBAlDgxIkLa/jzby8QuteJiGFwkDC0EUJSqLsOPVyXotzahzVoh8kDA0RqWujicaDV8/BLS9XjGy2tIiCIGFI+Y37iwe0nn43IUWTSIqZsnGQMFRzalOOZmM54Si1XWbXIGFoFZHMZLojDQHNUiZdWEVBkNsz5LmPdZE8k86GgClnLtiqtEDCUGlH+qA+OpYq07zAN28qGgIJQ1JCdIAeo3KyZzRuF6WGQMKQqiur3l1Ishsz6SjOLv0hkDA0V/RZg7nnxFZH9Bjn+QpIGJrWFU0gSqe9We2Vv1vVkFODhKFSuE8TMa0wugX1qi2ypaEuAwlDl0y6ffXQFg3sfu4yLwMJQ1nAK4Ipp3bReJ5dsqVVnxrk9gyVBqK2HfWER044Vv0hkDA0TE5Vg9Wx2LSOrzXIaeYKcnuGSk86lrBV2+cc1hvYc04NEoasQo+4NTSfi8OYri6zDpAwVCr0bjJepeb+kH5lMUNbzVxBwpCPOcanisoWdS7yX3wIJAyNhwRSq7GMYNkuWjzXAXJrhvRLiocYoxqLZ/CnryBh6OXTjT1a5RJ+lF2v1AcShm7e+xE9D2tbW+PoV+/9ALk5Q9WHyvpZ3XcFCUN3b4AZR2U+xs/XES37QyBhKLMaf5aseJlmrpkUvXgPGsi9GYq6rF7rcw0tovl9iz1GkDC00btLQcIQSuC3gifgmkQH4uc1T/gGjbtBnHmLC8cAAAAASUVORK5CYII=" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715P1</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC2klEQVR4nO2cyW3DUAxEDaQAl5TWU5ILMJBI5HD5SxbkaL1/cBTLcxmMuFO3z3+ejxtIGEIJPCvYBKwm3gH/+UJxwk3n7bh+HH/fj4/4yfO4esQNO+8gYWhVgv1jUvk4hWQffsO+u6eQ8scgYWhSgluft/jaRONXMkZ+9zRVIGHoZyW4Q3P/lh7s/hcNgYShsENmgp7p8SQf82W/2CGQl2Yo4qHD5sgE9avj/BoPgbw4Q5mXSYLbj5/zMpDXZqiOwS2Sds2d0bXs2/hDkDA0KCGkZTbq8IKmIWVoJ1cppIybQcLQogRze5HRn9mYFYkUWHnhSGYJJAxtlODfdJWchictUvq+jRcECUMR30g5EpKF357WqUgUipmicZAw1GNq73BEb6w6HC23q+gaJAytHsmlIg8mXxaFprghewUShmYlVBGym5soCESuVjIDCUMbJfSPSMnyVNPMbRNIGJqV4O35M5KujkgMDGn2I2LHqUsCEobSp1msnKVEtzmRdinY3lcFQMKQ+TJ/mLK50WyOx0iR7yuUbL4MJAwpHnIjM8ZDMdYY30WhcZkVAAlDUkLOhbRIp9cdVSmaMjqQMJR6mR4mv8oemstn1yUBCUOpBM0bRQov0aS/cknNvQ6QMBS+qfqrmh+SaFqHY1cfAglD8xqZ26HK7TWDVgXsaWoEJAy1CcgY4+gLZX0XzzfN5pgaJAwpuxrH93NwMXI1HbM6m34ZSBhq66zac635oRjkzwRsrg+BhKFQQtsqUo++pqhrkH+xQyBhaDxDnVqiqQ5HG7le9zpAXpqheJJyiTGzsTEl6yv5IGHom+3GFlPXjbjaqA8kDO3e+yGpjGONHg8tdggkDH2rhFZj1HzHH94dAxKGYocjW2W1++oebJkfau+OAXlthiIeapNnuStd+2W7+hBIGBrzsl4BcnKGV+s1J7e+JwLklRn6xwEJQyiBZwWbgNXEO+A/XyRO+AIeORh6WJy7qQAAAABJRU5ErkJggg==" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715NU</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC1klEQVR4nO2cS26DQBBER/IBOJKvzpFygEgO0/+ZISTy0jwWFjbUplTurv5Ae7157A0kDKEE/ivEBKIm2YH8+UE+odnx6F++W3t+PV7tqbd8H7ccX48Pv0sugIShUQmqly6V/RCSKMUuyG9bCCluBglDkxJ6kLHoc+hl30Iqx1mJTT1UgYShayVkQtMzyWDbfzQEEoZMCZK3VEPifUw+ksuuNQTy3gy5H5IzvaH1hNbSHv3hh0DenKGoy8wUnX5c12Ug781QHgJXTy2a6yWZxbfxRpAwNCjBpZUmutZl7qnjFpAwtCqhpVSkqSjlq7ombw3tHpZAwtCJEkwgEmiyIRR9kMh9J1kQJAxZQHKrnZpQIUV+s6uZ5EDC0KoEVY7PxnLCUWq7dNcgYWiq6LoVMictGcxymdsjv6AjWJAwtChBY46OW7dxfKZJznVVCjaQMDTFofpRbI9lOjHbGZtAwtAvSvC6zIqzaAhpCFJ3PU9JQMJQempPY+auyw5aT3LVZ8+eGiQM+YQjuohGiQ9IdOqRo48hDoGEoXFdsUxrLSJl8vJG47QrABKGVAnSGjJLlP1Ez2UShyxpjbU9SBia+88ipAw8toiUBdvaFQAJQ6kE317LCs0v1Gna3B8CCUPRY8xwE6OPYcJx1h8CCUN1kBEFapXKtI5fZrMgYWhRQtTqZqx97zEbQe6zQcLQaXVlkUY2Pnxx0Xf4s2Cb+0MgYcjjkNvjSS/xf8sC7OQ5AJAwVJf2y4w+t6j9WCdtIGHIs5odWZdlNVYb2Ou8DCQMmZOOGX0W82VeNj5fVOMQSBgqrsYWOyKN5QU/W+MQSBha3/sRpqg8Vp0PNi5xCCQMrUpI//yq62f2YqIrDYGEoXjbgzSQrGCPsBSSunpPBMj7MuR+yJ4ly5SV3cYwRSBh6EQJUV0NozLXlQ7S3FODhKETJbxxgIQhlMB/hZhA1CQ7kD8/xCf8ADwCDOG/hbsjAAAAAElFTkSuQmCC" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715NR</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC10lEQVR4nO2cW66CQBBESVyAS3LrLskFmHCdftXMAHrjp5z5ICDWT6WofkzDsn657gtIGEIJPCt4Aq5JdCB+/lCesMS6vM6u7fL6bDeei5/d7fKR/7qBhKGtEuxifVzaYXH5+OH+0lXeaIf6M0gYmpTQTOaWGgozavK5u9zMh5pLNasCCUPvlGAmHbakiHf9h4ZAwlCnBLFh8pl+e6chkCdmKPOhzlL0/y5bOs6HQJ6cIdVlhtw/fKjLQJ6aIa2450pTXWa12rBAwtCgBBNUhEJXTpzlDQuAWY5svA8kDHUCMfm88iedZY+xOVJU+VvvAwlDFcEyzoUZDYfoYu9oCCQMeURyN/Enqpa1izyJipbjThQECUOym5CKqyma1UrEM1HqcmqQMBRu0goxb0fXvoZLpWwpDGfOh0DCUOY3Uk4l0V6DWXGmgDbFMpAwlJlxBS/tvlZryH7Ls8ucU4OEoVBEbot0AyCa+FB/aN4lAQlDGZF8byQSoGhp1wzaFOnGWAYShqq6UgRzu4medN+2jvg212UgYchXjppNBX4YjxLrOacGCUOVGSsVqm2OoZgfNl6HnBokDKW/NNHkyrhVbWsfcNz2h0DC0KqyvmbWzHM8PaqyPhU25UMgYSiUUHMe605dlvFt2x8CCUNDhZ4hS3MeEtIQ3za1PcjTM+RZTVeDTdl1Z9dzTg0ShtJNtJsxTJ5VTu1nNY7d+RBIGKqIFHFLg9kxoTiNY+/EMpAwlKNm2VnsNjA09tEV+EN/CCQMDUtTQ/1kUI4T7e2XgYQhd5PalPcOkCdF2i+rWHYwkw8ShvT+olXvGjGP94VqcPr4DVmQZ2eoe8s6P/lRQ0RDng0Shj4oIduL4xisCnwNWoOEoUMlVCqkjz/4VlnNx4KEoR0lVBQ0vWieOnbJyrzm/hBIGDr4HqPmh2oApA7vv8cI8qQMfbFAwhBK4FnBE3BNogPx80fyhD+wEgnzb1U4+QAAAABJRU5ErkJggg==" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715NT</div>
+    <div class="co">IET Corporation</div>
+  </div>
+  <div class="label">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAC1klEQVR4nO2cSW4CMRRELeUAHImrc6QcIBJp/9kDIGUZPy8I0F1ZlIr6k93t+cf1aCBhCCXwW8ETcE2iA/HzH+UJzdbX9f67Xd9dL+2ut/z0j3ZBl1wACUOjElQvXSqPLqSHS6Xd5btbCCluBglDkxLEeC6VqHKaiEZuuJkZ6dVuVSBh6L0S+lLRRGgTSX3WEEgYMiV0C+rBy3Mfk4/EsvcaAnk2Q54P6TV9ucKYf2yf8yGQhzMUdZklRduX93UZyLMZyiWak+JMNSdepv423ggShgYluLSyPxTBTmwshKS3gIShVQkS8e4lHnYL0qzJW0O9Z2SdIpAwtCjBO4vWT7QcvMtHfchj3yYKgoShJR9q+yaRKcb9apcPgYQhsZSYjeWEo9R2mV0PGgIJQ95PEpPxzlIGNE279d2aD4GEIXVg9xybtHa78YaAKkc7lkssAwlDJc8JQy6Vq64cmqk3DRoCCUPhJlK95wYQ2zDktdokrsGHQMJQpjZzCa9hLIqztSsAEoZqZqzztdFzYldH9Bin+QpIGHpO2xW9K2TflRG/NxqnvQIgYcgLsZz4Z7bsscxHHzKRHWp7kDDkESn9RWqwfOfdD/3u9bwM5NkMqedkPiQlvN3qXhP/cq3tQcKQhqxBIH64o044tv0hkDDkSrD0eJHKtB3ft0GOtT1IGCpTMm1W5+jDk21rPq45NUgYMiOJuFXcJ2s1Wxq51nMAIGEo3cTr+Nw/FPOPcavj4kMgj2copvXhQ3UXta8lp65zfpAnM1TTY/kTR0Bi19ByiBokDA2ZsS0/e5aHo/MM/vgRJAy9Pt04HCirtrT1IZAwtDllbVGwHpjNQ9eLD4GEoVkJMYevOZWfHKpFPEgYevO0hzIqM9Hk44i2/SGQMJRB3R6jN56V1m5jVn7bfAjk4QxFXVavyVwjt1fLfes+RpAwdNKzS0HCEErgt4In4JpEB+Lnmif8ApNv2FEjLTSkAAAAAElFTkSuQmCC" alt="QR"/>
+    <div class="model">C9120AXI-B</div>
+    <div class="serial">S/N: FJC294715Q0</div>
+    <div class="co">IET Corporation</div>
+  </div>
+</div></body></html>
